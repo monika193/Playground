@@ -1,0 +1,68 @@
+{
+    margin:0;
+    padding:0;
+ }
+ .top{
+     width: 100%;
+     height: 100vh;
+     background-color:grey;
+ }
+.centerdiv{
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    background-color:pink;
+    border-radius: 5%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.h2{
+text-align: center;
+color: white;
+text-transform: uppercase;
+font-size: 2em;
+margin-top: -50%;
+margin-bottom: 50px;
+text-shadow: -2px 2px 1px #0a84c6;
+}
+.inputbox{
+width: calc(100% - 30%);
+height: 30px;
+display: block;
+margin: auto;
+padding: 0 10px;
+}
+.placeholder{
+    letter-spacing: 2px;
+    color: black;
+}
+button{
+width: calc(100% - 80%);
+height: 30px;
+display: block;
+margin: auto;
+box-align: center;
+}
+.forgor-section{
+width: calc(100% - 80%);
+line-height: 30px;
+display: block;
+margin: auto;
+color: royalblue;
+background-color: pink;
+text-transform: uppercase;
+font-size: 0.8em;
+text-align-last: left;
+/* padding-right: 20px; */
+/* box-sizing: border-box */
+}
+.box{
+    text-align-last: right;
+}
+.psw{
+    text-align-last: left;
+}
+
+ 
