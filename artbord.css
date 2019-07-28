@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    /* box sizing:border-box; */
+     }
+     body{
+        background-color:white;
+        padding: 30px;
+     }
+        .top{
+            width: 100px;
+            height: 200px;
+            /* position: relative; */
+            background-color:#f0f0f0; 
+            /* transform: translate(+150%,+100%); */
+            margin:auto;
+            padding: 50px;
+           
+    }
+        .centerdiv{
+           width: 150px;
+           height: 250px;
+           position: absolute;
+           background-color:white;
+           top: 50%;
+           left:50%;
+           transform: translate(-50%,-50%);
+           text-align-last: left ;
+           box-shadow: aqua;
+           border:1pc;
+           margin: auto;
+           box-shadow:  0px 2px 2px 2px grey;
+           
+        }
+        .a{
+            position: absolute;
+            left: 30px; 
+        }
