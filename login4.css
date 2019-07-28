@@ -1,0 +1,41 @@
+*{
+    margin:0;
+    padding:0;
+    /* box sizing:border-box; */
+        
+ }
+ body{
+    background-color:white;
+    padding: 30px; 
+
+}
+.top{
+    width: 400px;
+    height: 300px;
+    /* position: relative; */
+    background-color:gray; 
+    /* transform: translate(+150%,+100%); */
+    margin:auto;
+    padding: 50px;
+   
+}
+.centerdiv{
+   width: 20%;
+   height: 20%;
+   position: absolute;
+   background-color:white;
+   /* border-radius: 3%; */
+   top: 50%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   text-align-last: left ;
+   border:1pc;
+   margin: auto;
+   font-size: 0.7em;
+   color: lightslategray;
+   
+}
+.a{
+    position: absolute;
+    left: 30px; 
+}
