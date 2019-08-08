@@ -55,13 +55,13 @@ body{
     background-color: rgb(255, 255, 255);
 }
 
-.myrequest div {
+ .myrequest div {
     color: black;
     width: 100px;
     margin: 25px 15px;
     text-align: center;
     font-size: 25px;
-}
+} 
 
 .request {
     flex-grow: 1;

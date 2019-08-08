@@ -51,14 +51,14 @@
   
   
   
-  .leftbox {
+  .first {
     float: left;
      width: 20%;
     padding: 10px 140px 0px 30px;
     font-size: 16px;
   }
   
-  .middlebox {
+  .second {
     float: left;
     width: 60%;
     margin-top: 3px;
@@ -67,7 +67,7 @@
     border: 1px solid grey;
   }
   
-  .middlebox img {
+  .second img {
     position: absolute;
     top: 8px;
     right: 10px;
@@ -82,14 +82,14 @@
     border: none;
   }
   
-  .rightbox {
+  .third {
     float: right;
     width: 20%;
     padding: 5px 30px 0 0;
     text-align: right;
   }
   
-  .rightbox button {
+  .third button {
     padding: 10px 30px;
     border: none;
     outline: none;
