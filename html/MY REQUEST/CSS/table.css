@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+ box-sizing: border-box; 
+        
+ }
+ table {
+     border-collapse: collapse; 
+    width: 100%;
+    
+   
+  }
+  th{
+   text-align: right; 
+  }
+  td{
+text-align: left;
+  }
