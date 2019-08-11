@@ -26,7 +26,6 @@
     background-color:lightgray;
     height: 20px;
   
-   
   }
   img{
     border-radius: 50%;
@@ -130,9 +129,7 @@
   margin-top: 20px;
   margin-bottom: 10px;
 }
-/* .main .item span{
-margin-top: 1px;
-} */
+
 .main .add img{
   height: 35px;
   width: 20px;

@@ -34,7 +34,7 @@
         <div class="item">
     <div><b>ITEM</b><p>lorim ipsum dolor sit amet,consoctatur adipiscing</p></div>
     <div class="add">
-  <span>ADD ITEM</span><div><img src="../IMAGES/request-icons-10 (2).png" align-right="0px"></div>
+  <span>ADD ITEM</span><div id="add item"><img src="../IMAGES/request-icons-10 (2).png" align-right="0px"></div>
   </div>
     </div>
     <div class="item2">
@@ -113,6 +113,14 @@
   </div>     
 </div>
 </div>
+<script>
+        var additem = document.getElementById('add item');
+        additem.addEventListener('click', display);
+        function display() {
+        window.location.href = ('file:///E:/git_local/Playground/html/REQUISITION/HTML/additem.html');
+    
+        }
+      </script>
 
 
 

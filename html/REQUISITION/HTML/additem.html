@@ -23,7 +23,7 @@
              <div class="main"> 
                     <div class="item">
                          <div>  <p>Add item</p> </div>
-                         <div><img src="../IMAGES/request-icons-13 (2).png"  width="30px"></div> 
+                         <div id="cancel"><img src="../IMAGES/request-icons-13 (2).png"  width="30px"></div> 
                         </div>
                         <div class="description">
                             <span>DESCRIPTION</span>
@@ -49,6 +49,14 @@
                         </div>
                     
                         </div> 
+                        <script>
+                                var additem = document.getElementById('cancel');
+                                additem.addEventListener('click', display);
+                                function display() {
+                                window.location.href = ('file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition2.html');
+                            
+                                }
+                              </script>
                 </body>
                 </html>
         
