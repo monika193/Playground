@@ -2,37 +2,48 @@
 <html lang="en">
 
 <head><link rel="stylesheet" type="text/css" href="../CSS/login3.css">
-        </head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+    <script>
+            function init() {
+                 
+                location.href = "login4.html";
+            }
+    
+            console.info('continue');
+        </script>      
+</head>
          <body>
-          <div class="top">
+         
             <div class="centerdiv">
                 <br><br><br><br>
-        
+                <div style="min-height: 10vh;"></div>
                 <div class="a">
-        <u> FORGOT PASSWORD</u>
-        <p>lorim ipsum dolor sit amet,consoctatur adipiscing mauris mattis,sit amet tempur vehicula</p>
+        <span style="border-bottom:solid 2px #707070; font-family: roboto; font-weight: 700; color: #595959; font-size: 16px;"> FORGOT PASSWORD</span>
+        <p style="font-family:Gill Sans; font-size: 12px;color: #747474,100%; font-weight:400; letter-spacing: 1px; margin-top: 20px;">lorim ipsum dolor sit amet,consoctatur adipiscing mauris mattis,sit amet tempur vehicula</p>
         <br><br>
-            <span> Email  </span>
+            <span style="font-family: roboto; font-weight: 400; color:#505050; font-size: 12px;"> Email  </span>
             <div>
                 <input type="text" name="e" class="inputbox">
                  
              </div>
               <div class="field">
                
-                <img src="../IMAGES/request-icons-07 (2).png" height="20px" width="20px"> <span>This field is required</span>
+                <img src="../IMAGES/request-icons-07 (2).png" height="10px" width="10px"> <span>&nbsp;This field is required</span>
            
             </div><br>
             <div class="field">
                 
     
-                <img src="../IMAGES/request-icons-07 (2).png" height="20px" width="20px"> <span>This email is not registered with us</span>
+                <img src="../IMAGES/request-icons-07 (2).png" height="10px" width="10px"> <span>&nbsp;This email is not registered with us</span>
             </div>
             <br><br><br>
                     <div>
-                            <button><a href="login4.html"> continue </a></button>
+                            <button  id="CONTINUE" type="button" onclick="init()"> continue </button>
+                                
+                                    
                             </div>
         </div>
         </div>
-        </div>
+       
         </body>
         </html>

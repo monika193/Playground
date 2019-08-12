@@ -5,32 +5,32 @@
         
  }
  body{
-    background-color:white;
-    padding: 30px;
-}
-.top{
-    width: 550px;
-    height: 450px;
-    background-color:#f0f0f0; 
-    margin:auto;
-    padding: 50px;
+    background-color:#F6F8F9,100%;
+    padding: 30px; 
+     height: 600px;
+    /* width: 1024px;  */
+    border: 1px solid lightgrey;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
    
 }
+
 .centerdiv{
-   width: 500px;
-   height: 450px;
-   position: absolute;
-   background-color:white;
-   border-radius: 3%;
+   width: 95%;
+   height: 95%;
+    position: absolute;   
+   background-color:#FFFFFF;
+   border-radius: 2%;
    top: 50%;
-   left:50%;
+   left:50%;  
    transform: translate(-50%,-50%);
-   text-align-last: left ;
-   box-shadow: aqua;
+   text-align-last: left ; 
    border:1pc;
-   margin: auto;
-   box-shadow:  0px 4px 4px 4px grey;
-   color: black;
+  margin-top:31.92px; 
+   box-shadow:  0px 0px  10px grey; 
+   margin-bottom: 31.92px;
+
    
 }
 .h2{
@@ -42,50 +42,50 @@ margin-top: -50%;
 margin-bottom: 50px;
 text-shadow: -2px 2px 1p blue;
 }
-.inputbox{
+ .inputbox{
 width: 350px;
 height: 20px;
-display: block;
-text-align-last: left;
-padding: 0 10px;
-margin: auto;
-}
-.placeholder{
-   letter-spacing: 2px;
-   color:black;
-   font-size: 2em;
-}
-button{
-width: calc(100% - 80%);
-height: 30px;
-margin: center; 
-color: white;
-background-color: rgb(0, 162, 255); 
-border-radius: 50px 50px 50px 50px;
-text-align-last: center;
-}
-.forgor-section{
-width: calc(100% - 80%);
-line-height: 30px;
-display: block;
-margin: auto;
-text-transform: uppercase;
-font-size: 0.8em;
-text-align-last: left;
 
-}
-.psw{
-   float: right;
-   color: black;
+padding: 5px;
+
+border: solid 0.5px #D3D3D3;
+margin-top: 20px;
+
+} 
+.placeholder{ 
+   letter-spacing: 6px;
+   color:#505050,100%;
+   font-size: 15px;
    
 }
+button{
+width: 130.51px;
+height: 40.22px;
+margin: center; 
+color: white;
+background-color: #32BDD2;
+border-radius: 21px 21px 21px 21px;
+text-align-last: center;
+border: 0px;
+font-size: 12px;
+font-weight: 700;
+
+}
+
 .box{
+   display: flex;
    float: left;
-   color: black;
+   color: #707070;
+   font-size: 10px;
+
+   
 }
+
 .a{
-   position: absolute;
-   left: 70px;
+margin: auto;
+width: 30%;
+
+
+
+
 }
-
-

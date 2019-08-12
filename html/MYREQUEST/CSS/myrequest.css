@@ -164,11 +164,14 @@ margin-right: 20px;
 }
 
 .notification{
-    display: flex;
+    width: 200px;
+    /* font-size: 15px;   */
+    flex-grow: 3; 
+     display: flex;
     align-items: center;
     margin-left: 20px;
-    width: 200px;
-    justify-content: flex-end;
+    /* width: 200px; */
+    justify-content: flex-end; 
 
 }.showmore{
     display: flex;

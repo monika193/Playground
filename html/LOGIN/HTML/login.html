@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><link rel="stylesheet" type="text/css" href="../CSS/login.css">
-        </head>
-         <body>
-          <div class="top">
-            <div class="centerdiv">
-                <br><br>
-                <div class="a">
-        <u>login</u>
+<head>
+    <link rel="stylesheet" type="text/css" href="../CSS/login.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script>
+        function init() {
+            location.href = "login1.html";
+        }
+
+        console.log('BUTTON PRESSED');
+    </script>
+
+</head>
+
+<body>
+   
+    <div class="centerdiv">
         <br><br>
-            <span> Email or user name </span>
+        <div style="min-height: 10vh;"></div>
+        <div class="a">
+            <span
+                style="border-bottom:solid 2px #707070; font-family: roboto; font-weight: 700; color: #595959; font-size: 16px;">LOGIN</span>
+            <br><br><br>
+            <span id="un" style="font-family: roboto; font-weight: 400; color:#505050; font-size: 12px;"> Email or user name </span>
             <div>
                 <input type="text" name="e" class="inputbox">
-                
-            </div>
-                    
-            <br><br>
-            <span> password </span>
-             <br>
-             <div>
-                 <input type="password" name="a" class="inputbox" value="..............">
-                 
-            </div>
-            
-            <br><br>
-            <div> 
-             <div class="box">
-                    <INPUT TYPE="CHECKBOX" NAME="Nature of your account">remember me
-               </div>
-               <div class="forgot-section">
-                <div class="psw"> <a href="£">forgot password </div>
-                </div><br>
-                <br><br><br>
-                    <div>
-                            <button id="login">login</button>
-                            </div>
-                        </div>
-        </div>
-            </div>
+
             </div>
             <script>
-                    var login = document.getElementById('login');
-                    login.addEventListener('click', display);
-                    function display() {
-                    window.location.href = ('file:///E:/git_local/Playground/html/LOGIN/HTML/login1.html');
-                
+                var u = document.getElementById("un");
+                u.addEventListener("click", myFuncation);
+
+                function myFuncation() {
+                    alert("HI");
+                    console.info("You Clicked the email text");
+                }
+            </script>
+            <br><br>
+            <span id="password" style="font-family: roboto; font-weight: 400; color:#505050; font-size: 12px; "> Password </span>
+            <br>
+            <div>
+                <input type="password" name="a" class="inputbox" value=""placeholder="********">
+
+            </div>
+            <script>
+                    var psw = document.getElementById("password");
+                    psw.addEventListener("click", myFuncation);
+    
+                    function myFuncation() {
+                        alert("12345");
+                        console.info("You Clicked the password");
                     }
-                  </script>
-            
-            </body>
-            </html> 
+                </script>
+
+            <br><br>
+            <div>
+                <div class="box">
+                    <INPUT TYPE="CHECKBOX" NAME="Nature of your account"><label>&nbsp; Remember me</label> 
+                </div>
+      <div class="psw"> 
+<a href="login2.html " style="color:#707070; font-size: 10px;float:right;border-bottom:solid 0.1px #707070;margin-left: 70px;">Forgot password</a> </div> 
+
+                <br><br><br>
+                <div>
+ <button id="login" type="button" onclick="init()">LOGIN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+</body>
+
+</html>
