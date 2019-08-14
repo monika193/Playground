@@ -132,10 +132,10 @@
       padding-top: 1%;
       padding-bottom: 1%;    
   }
-  .outer{
-    border-left:1px solid black;
+  /* .outer{ */
+    /* border-left:1px solid black; */
 
-  }
+  
   .icon img{
       margin:0.5%
       
@@ -144,8 +144,8 @@
     display: flex;
     flex-direction:column;
     padding-bottom: 1.5%;
-   position: relative;
-  
+    border-left:1px solid black; 
+   
     
 }
 
@@ -156,14 +156,23 @@
 }
 
  .circle{
-    position: absolute;
+     border-radius: 50%;
+     display: flex;
+     background-color: #ffffff;
+     border:1px solid black;
+     padding:0.5%;
+     margin-left: -0.6%;
+     margin-top: -1%;
+      
+
+     /* position: absolute;
     border-radius: 50%;
      display: inline-block; 
-    border:1px solid black;
+   
     padding: 0.5%;
     top:0;
-    left:-8px;
-    background-color: #ffffff;
+    left:-8px; */
+    
 
 }
 
@@ -175,18 +184,21 @@
     
   display: flex;
   flex-direction: column;
-  width: 70%;
+   width: 70%; 
+  border-left:1px solid black; 
   
 
 }
 .text1{
   background: blueviolet;
-  position: relative;
+   display: flex;
+  /* position: relative; */
 }
 .text2{
-  width: 30%; 
+ width: 30%;  
  float: left; 
-  padding-left: 3%  
+  padding-left: 3%; 
+  
 }
 
 #text-span{
@@ -206,16 +218,18 @@
   float: right;
 }
 
- .circle1{
-   position: absolute; 
-  border-radius: 50%;
-   display: inline-block;    
-  border:1px solid black;
-  padding: 0.8%;
-  top:34%;
-  left:-8px;
-   background-color: #ffffff;
-   
+  .circle1{
+    border-radius: 50%;
+    display: flex;
+    background-color: #ffffff;
+    border:1px solid black; 
+    padding:3%;
+    width: 2%;
+    margin-left: -15%;
+    margin-bottom: -10%;
+    margin-top: 5%;
+     
+    
     
 
  }
