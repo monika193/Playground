@@ -180,11 +180,14 @@
 
 }
 .text1{
+  display: flex;
+  align-items: center;
   background: blueviolet;
   position: relative;
 }
 .text2{
-  width: 30%; 
+ 
+  width: 30%;  
  float: left; 
   padding-left: 3%  
 }
@@ -195,15 +198,19 @@
   padding-top: 30px;
 }
 .text-right{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   width: 60%;
   float: right;
   margin-right: 20px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .text-right1{
-  width: 30%;
+  /* width: 30%; */
   float: right;
+  margin-top: -1%;
 }
 
  .circle1{
