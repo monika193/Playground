@@ -16,7 +16,7 @@
                     <div class="header2">
                         <div class="child"><img src="../IMAGES/msc.jpg" height="30px"></div>
                         <div class="first-child"><span>monika</span></div>
-                        <div class="second-child"><img src="../IMAGES/dropdown.png" height="25px" width="25px"></div>
+                        <div class="second-child"><img src="../IMAGES/dropdown.png" height="10px" width="10px"></div>
                     </div>
                 </div>
             </div>
@@ -44,10 +44,20 @@
 <p><input type="radio" name="grouping" value="SOMEONE ELSE"> SOMEONE ELSE<br></p>
 <div class="save">
 <b><u>SAVE DRAFT</u></b>
- <input type="button" name="next" value="next ->" style="width:9%;height:30px;background-color:lightskyblue;border-radius: 10px;align-items: right;">              
+ <input type="button" name="next"  value="next ->" id="next" onclick="init()" style="width:9%;height:30px;background-color:lightskyblue;border-radius: 10px;align-items: right;">              
 </div>
 
     </div>
+    <script>
+    
+        var notification = document.getElementById('next');
+        notification.addEventListener('click', display);
+       function init() {
+        location.href = ("requisition2.html");
+   
+        }
+     </script>
+        
 
 </body>
 

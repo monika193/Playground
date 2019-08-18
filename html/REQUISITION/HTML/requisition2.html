@@ -3,7 +3,16 @@
 
 <head>
 		<title>REQUISITION</title>
-		<link rel="stylesheet" type="text/css" href="../CSS/requisition2.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/requisition2.css">
+        <script>
+    
+            var notification = document.getElementById('nx');
+            notification.addEventListener('click', display);
+           function init() {
+            location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition3.html");
+       
+            }
+         </script>
 </head>
 
 <body>
@@ -16,12 +25,12 @@
                     <div class="header2">
                         <div class="child"><img src="../IMAGES/msc.jpg" height="30px"></div>
                         <div class="first-child"><span>monika</span></div>
-                      <div class="second-child"><img src="../IMAGES/dropdown.png" height="25px" width="25px"></div>
+                      <div class="second-child"><img src="../IMAGES/dropdown.png" height="10px" width="10px"></div>
                     </div>
                 </div>
             </div>
         
-
+<div class="top" style="display: flex;">
 <div class="container1">
 
         <p><b>REQUISITION</b></p>
@@ -109,18 +118,32 @@
 </div>
 <div class="save">
     <u><span>SAVE DRAFT</span></u>
-<div> <u>BACK</u> <input type="button" name="next" value="next ->" style="width:90px;height:40px;background-color:lightskyblue;border-radius: 10px;align-items: right;"> </div>          
-  </div>     
+<div> <u id="bk"  onclick="myfunction()" style="color:#32BDD2; ">BACK</u> <input type="button" name="next" value="NEXT ->" id="nx"  onclick="init()"style="width:90px;height:40px;background-color:#32BDD2;border:none;border-radius: 10px;align-items: right;"> </div>          
+<script>
+    
+    var additem = document.getElementById('bk');
+    additem.addEventListener('click', display);
+   function myfunction() {
+    window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition.html");
+
+    }
+ </script>
+
+</div>     
+</div>
 </div>
 </div>
 <script>
-        var additem = document.getElementById('add item');
-        additem.addEventListener('click', display);
-        function display() {
-        window.location.href = ('file:///E:/git_local/Playground/html/REQUISITION/HTML/additem.html');
     
-        }
+         var additem = document.getElementById('add item');
+         additem.addEventListener('click', display);
+        function display() {
+         window.location.href = ('file:///E:/git_local/Playground/html/REQUISITION/HTML/additem.html');
+    
+         }
       </script>
+      
+
 
 
 
