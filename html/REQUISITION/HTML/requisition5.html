@@ -8,16 +8,36 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <script>
     
+                var notification = document.getElementById('nx');
+                notification.addEventListener('click', display);
+               function myfunction() {
+                location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/priview1.html");
+           
+                }
+             </script> 
+        <script>
+    
             var notification = document.getElementById('back');
             notification.addEventListener('click', display);
-           function myfunction() {
+           function init() {
             location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition4.html");
        
             }
          </script>
+         
 </head>
 
 <body>
+        <script>
+                        
+                var additem = document.getElementById('draft');
+                additem.addEventListener('click', display);
+               function moveTo() {
+                window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/ack2.html");
+            
+                }
+             </script> 
+
 
         <div class="header1">
                 <div class="header1">
@@ -47,10 +67,21 @@
         <p style="font-family: roboto; font-size:12px; color:#747474;">lorim ipsum dolor sit amet,consoctatur adipiscing</p></div>
     <div class=additem> 
         <span style="font-family: roboto;font-size:15px;color:#505050;font-weight:700;">ADD APPROVER </span>
-        <img src="../IMAGES/request-icons-10.png" id="img" height="35px;" width="20px;"onclick="init()"/>
+        <img src="../IMAGES/request-icons-10.png" id="img" height="35px;" width="20px;"onclick="display()"/>
     </div>
+    
       
         </div>
+        <script>
+    
+                var notification = document.getElementById('img');
+                notification.addEventListener('click', display);
+               function display() {
+                location.href = ("addpeople3.html");
+           
+                }
+             </script>
+        
         <!-- <p style="font-family: roboto; margin-left: 30px; font-weight:700; font-size: 14px; color: black; margin-top:80px; margin-top: 20px;" ><b>INVITEES</b></p><br><br> -->
         <div class="noteflex3"style="border:1px solid #E0E0E0; margin-left:30px;background-color:#F4F8FA; margin-top:50px;">
             <div class="border">
@@ -76,21 +107,16 @@
         </div>
   
         <div class="save">
-            <u>SAVE DRAFT</u>
-        <div> <u id="back"  onclick="myfunction()"style="color: #32BDD2;">BACK</u> <input type="button" name="next" value="NEXT ->" style="border:none;width:90px;height:40px;background-color:#32BDD2;border-radius: 10px;align-items: right;"> </div>          
+            <u  id="draft"  onclick="moveTo()">SAVE DRAFT</u>
+        <div> <u id="back"  onclick="init()"style="color: #32BDD2;">BACK</u> <input type="button" id="nx" onclick="myfunction()" name="next" value="NEXT ->" style="border:none;width:90px;height:40px;background-color:#32BDD2;border-radius: 10px;align-items: right;"> </div>
+                 
           </div> 
           </div>
         </div>
     </div>
-    <script>
     
-        var notification = document.getElementById('img');
-        notification.addEventListener('click', display);
-       function init() {
-        location.href = ("addpeople3.html");
-   
-        }
-     </script>
+    
         
           </body>
+          
      </html>

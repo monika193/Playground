@@ -18,6 +18,15 @@
 </head>
 
 <body>
+        <script>
+                        
+                var additem = document.getElementById('draft');
+                additem.addEventListener('click', display);
+               function moveTo() {
+                window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/ack2.html");
+            
+                }
+             </script> 
 
         <div class="header1">
                 <div class="header1">
@@ -95,7 +104,7 @@
         </div>
     <!-- </div> -->
         <div class="save">
-            <u>SAVE DRAFT</u>
+            <u id="draft"  onclick="moveTo()">SAVE DRAFT</u>
         <div id="next"> <u  id="back"  onclick="display()" style="color: #32BDD2;">BACK</u> <input type="button" id="nx" onclick="myfunction()" name="next" value="NEXT ->" style="border:none;width:90px;height:40px;background-color:lightskyblue;border-radius: 10px;align-items: right;"> </div>          
           </div> 
           </div>

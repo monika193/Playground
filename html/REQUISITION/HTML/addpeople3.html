@@ -36,9 +36,27 @@
                          <div>  <p style="font-family: roboto; font-size:20px;color:#5A5A5A; font-weight:400;">Add people</p> </div>
                          <div id="cancel"><img src="../IMAGES/request-icons-13 (2).png"  width="30px" onclick="myfunction()"/></div> 
                         </div>
-                        <div class="search"><input type="text" placeholder="search" />
+                        <script>
+    
+                            var notification = document.getElementById('cancel');
+                            notification.addEventListener('click', display);
+                           function myfunction() {
+                            location.href = ("requisition5.html");
+                       
+                            }
+                         </script>
+                        <div class="search"><input type="text" id="searchnext"onclick="display()" placeholder="search" />
                             <img src="../IMAGES/request-icons-03 (2).png" width="50px" height="50px">
                         </div>
+                        <script>
+    
+                            var notification = document.getElementById('searchnext');
+                            notification.addEventListener('click', display);
+                           function display() {
+                            location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/search3.html");
+                       
+                            }
+                         </script>
                         <!-- <p style="font-family: roboto; margin-left: 30px; font-weight:700; font-size: 14px; color: black; margin-top:80px; margin-top: 20px;" ><b>INVITEES</b></p><br><br> -->
                         <div class="noteflex3"style="border:1px solid #E0E0E0; margin-left:60px;background-color:#F4F8FA; margin-top:40px;">
                             <div class="border">
@@ -93,15 +111,7 @@
                         </div>
                     
                         </div> 
-                        <script>
-    
-                            var notification = document.getElementById('cancel');
-                            notification.addEventListener('click', display);
-                           function myfunction() {
-                            location.href = ("requisition5.html");
-                       
-                            }
-                         </script>
+                        
                 </body>
                 </html>
         

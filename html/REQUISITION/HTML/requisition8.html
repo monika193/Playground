@@ -3,7 +3,7 @@
 
 <head>
 		<title>REQUISITION</title>
-        <link rel="stylesheet" type="text/css" href="../CSS/requisition2.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/requisition8.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
         <script>
     
@@ -11,10 +11,9 @@
             notification.addEventListener('click', display);
            function init() {
             location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition3.html");
-        
+       
             }
          </script>
-        
 </head>
 
 <body>
@@ -22,11 +21,11 @@
                         
                 var additem = document.getElementById('draft');
                 additem.addEventListener('click', display);
-               function myfunction() {
+               function moveTo() {
                 window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/ack2.html");
             
                 }
-             </script> 
+             </script>
 
         <div class="header1">
                 <div class="header1">
@@ -59,30 +58,13 @@
     </div>
     <div class="item2">
         <div>
-<div><p>IBM think server TS150 tower server with<br>
-    max processor 1 x intel xeon E3 (qurd<br>core)E3-1225v5 (3.3 GH2/cache 8 Mb)</p> </div> <br>
-    <div> <Span id="readmore"onclick="display()">READ MORE</Span></div>
-    <script>
-    
-        var notification = document.getElementById('readmore');
-        notification.addEventListener('click', display);
-       function display() {
-        location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition8.html");
-    
-        }
-     </script>
-    
+<div><p>IBM ThinkServer TS150 Tower Server With <br>Max. Processor 1 x Intel Xeon E3 (Quad<br> Core) E3-1225 v5”(3.3 GHz /Cache 8<br> MB)/ STD MEMORY 8GB X 1/ MAX. MEMORY<br> 64GB 4 Slots/HARD DRIVE 1 X 1TB SATA<br> 3.5” 7.2k SATA / STD. HDD BAY/ 3 bay <br>MAX. HDD BAY upto 4 x 3.5” +1 x 2.5” bay/<br> OPTICAL Multi Burner/Integrated RAID<br> 0,1,5,10 (RAID 121i).</p> </div> <br>
+    <div> <Span>READ MORE</Span></div>
 </div>
-
-
 <div>01</div>
 <div>10 jul 2019</div>
 <div>Rs 45,000</div>
-<div><img id="dropdown" src="../IMAGES/request-icons-11 (2).png" height="30px" onclick="myFunction()"/></div>
-<div id="myDropdown" class="dropdown-content">
-    <a href="#home">EDIT</a>
-    <a href="#home">DELETE</a>
-    </div>
+<div><img src="../IMAGES/request-icons-11 (2).png" height="30px"></div>
     
 </div>
 
@@ -144,34 +126,22 @@
 
 </div>
 <div class="save">
-    <u><span id="draft"  onclick="myfunction()">SAVE DRAFT</span></u>
-<div> <u id="bk"  onclick="display()" style="color:#32BDD2; ">BACK</u> <input type="button" name="next" value="NEXT ->" id="nx"  onclick="init()"style="width:90px;height:40px;background-color:#32BDD2;border:none;border-radius: 10px;align-items: right;"> 
+    <u><span id="draft"  onclick="moveTo()">SAVE DRAFT</span></u>
+<div> <u id="bk"  onclick="myfunction()" style="color:#32BDD2; ">BACK</u> <input type="button" name="next" value="NEXT ->" id="nx"  onclick="init()"style="width:90px;height:40px;background-color:#32BDD2;border:none;border-radius: 10px;align-items: right;"> </div>          
+<script>
     
-    <script>
-    
-        var additem = document.getElementById('bk');
-        additem.addEventListener('click', display);
-       function display() {
-        window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition.html");
-    
-    
-        }
-     </script>
-</div>
+    var additem = document.getElementById('bk');
+    additem.addEventListener('click', display);
+   function myfunction() {
+    window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition.html");
 
+    }
+ </script>
 
-
-
- 
-
-</div> 
-   
+</div>     
 </div>
 </div>
-
-
 </div>
-
 <script>
     
          var additem = document.getElementById('add item');
@@ -181,27 +151,10 @@
     
          }
       </script>
-      <script>
-        var click = document.getElementById('dropdown-content');
-         click.addEventListener('click', myFunction);
-        //  var Dropdown= document.getElementById('myDropdown')
-    function myFunction() {
-        // Dropdown.style.display('block');
-        // document.style.display()
-        
-     document.getElementById("myDropdown").classList.toggle("show");
-      Window.addEventListener('click',outsideclick)
-         function outsideclick(e){
-             if (e.target !==filter){
-                dropdown.style.display="none";
-            }
-         }
-    }
-    </script>
-    
-    
-    
-       
+      
+
+
+
 
 </body>
 </html>

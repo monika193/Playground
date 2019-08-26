@@ -10,7 +10,7 @@
             var notification = document.getElementById('bell');
             notification.addEventListener('click', display);
            function init() {
-            location.href = ("file:///E:/git_local/Playground/html/MYREQUEST/HTML/requestview.html");
+            location.href = ("file:///E:/git_local/Playground/html/MYREQUEST/HTML/requestview1.html");
        
             }
          </script>
@@ -45,7 +45,8 @@
              </div>
               
              <div class="filter">
-                 <img id="dropmenu"src="../IMAGES/request-icons-01 (2).png" height="50px" width="50px" onclick="myFunction()"/>
+                 <div class="dropdown">
+                 <img class="dropbtn" style=" background-color:#ffffff"src="../IMAGES/request-icons-01 (2).png" height="50px" width="50px" onclick="myFunction()"/>
                  <div id="myDropdown" class="dropdown-content">
                     <a href="#home" style="color: #B5B5B5">CLEAR</a>
                     <a href= "myrequest3.html">APPROVED</a>
@@ -53,6 +54,7 @@
                     <a href="#contact">AWAITING</a>
                     <a href="#contact">REJECTED</a>
                   </div> 
+                 </div>
                  <p><span>FILTER</span><br /><span style="color: #909090;font-size:12px;">Showing approved requests</span></p>
                  
                 </div>
@@ -94,37 +96,25 @@
         </div>
     </div>
     <script>
-        var click = document.getElementById('dropdown-content');
-         click.addEventListener('click', myFunction);
-        //  var Dropdown= document.getElementById('myDropdown')
+        
     function myFunction() {
-        // Dropdown.style.display('block');
-        // document.style.display()
+        
         
      document.getElementById("myDropdown").classList.toggle("show");
-      Window.addEventListener('click',outsideclick)
-         function outsideclick(e){
-             if (e.target !==filter){
-                dropdown.style.display="none";
+    }
+    window.onclick = function (event){
+        if (!event.target.matches('.dropbtn')){
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i=0; i< dropdowns.length; i++){
+            var openDropdown = dropdowns[i];
+            if(openDropdown.classList.contains('show')){
+                openDropdown.classList.remove('show');
             }
-         }
-        
-        //  }
-        //  var filter=document.getElementById("dropmenu")
-        //  Window.addEventListener('click',outsideclick)
-        //  function outsideclick(e){
-        //      if (e.target !==filter){
-        //         dropdown.style.display="none";
-        //     }
-        // if(click.toggle.display==="none"){
-        //     click.toggle.display="block";
-        //  }else{
-        //     click.toggle.display="none"
-        //  }
-     }
+        }
+        }
+    }
     
-    // //   window.onclick = function(event) {
-  
 
     </script>
 

@@ -1,0 +1,132 @@
+*{
+    margin:0;
+    padding:0;
+    /* box-sizing: border-box; */
+  } 
+  body {
+    margin: 0px;
+    padding: 0px;
+    background-color:#F6F8F9;
+  }
+  .header1{
+
+    display: flex;
+    justify-content:space-between;
+    flex-direction:row;
+    align-items: center;
+    background-color:#FFFFFF;
+     height: 50px; 
+
+    
+}
+
+  .header2{
+    display: flex;
+    flex-direction:row;
+    align-items: center ; 
+    justify-content:flex-end;
+    background-color:#FFFFFF;
+    height: 20px;
+    margin-left:20px; 
+    
+  
+   
+  }
+  img{
+    border-radius: 50%;
+  }
+  .header2 .child{
+   padding-right:10px;
+ 
+ }
+  .header2 .first-child{
+    padding-bottom: 10px;
+    padding-right:10px;
+    font-family: robot;
+    font-weight: 500;
+    font-size: 12px;
+    color: #595959;
+  }
+  .header2 .second-child{
+    margin-right: 8px;
+    margin-bottom: 10px;
+    
+  }
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    background-color:#FFFFFF;
+    border: 0.1px solid lightgrey;
+    align-items: center;
+    width: 9%; 
+    margin-top: 20px;
+    float: left;
+    margin-left: 20px;
+     border: none;
+     margin-bottom: 30px; 
+     height: 655px;
+  }
+  
+  .container1 p {
+    transform: rotate(-90deg);
+    margin: 100px 0px 0px 0px; 
+  }
+  
+  .container1 img {
+      margin-top: 60px;
+      width: 80px;
+      height: 390px;
+   
+   
+  
+  } 
+  
+  ::placeholder {
+    color: red;
+    opacity: 1;
+    width:60%;
+    height:30%;
+    
+
+  } .container2 {
+    display : flex;
+    flex-direction: column;
+   background-color:#FFFFFF;
+    justify-content: center;
+    border:0.1px solid lightgray;
+    align-items: left;
+    width: 88.2%;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    float:right;
+    height: 655px;
+    border:none;
+    margin-bottom: 30px;
+  
+
+} 
+ .item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30PX;
+  padding-bottom: 450px; 
+  
+}
+ .item b{
+  font-size: 15px;
+   margin-top: 80px; 
+  color: #B5B5B5;
+  font-family: roboto;
+  font-size: 700;
+  
+   
+
+}
+ .item p{
+  color: #888888;
+  font-size: 15px;
+  margin-bottom: 10px; 
+  letter-spacing: 1.4px;
+
+}

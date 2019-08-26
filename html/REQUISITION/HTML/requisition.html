@@ -3,7 +3,17 @@
 
 <head>
 		<title>REQUISITION</title>
-		<link rel="stylesheet" type="text/css" href="../CSS/requisition.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/requisition.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script>
+                        
+            var additem = document.getElementById('draft');
+            additem.addEventListener('click', display);
+           function myfunction() {
+            window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/ack2.html");
+        
+            }
+         </script>
 </head>
 
 <body>
@@ -24,7 +34,7 @@
 
 <div class="container1">
 
-        <p><b>REQUISITION</b></p>
+        <p><b  style="font-family: roboto;font-size:14px;font-weight:700;">REQUISITION</b></p>
         <img src="../IMAGES/request-image-30.png">
 
 
@@ -43,7 +53,7 @@
 <p><input type="radio" name="grouping" value="TEAM/DEPARTMENT/BRANCH" > TEAM/DEPARTMENT/BRANCH<br></p>
 <p><input type="radio" name="grouping" value="SOMEONE ELSE"> SOMEONE ELSE<br></p>
 <div class="save">
-<b><u>SAVE DRAFT</u></b>
+<b><u  id="draft"  onclick="myfunction()">SAVE DRAFT</u></b>
  <input type="button" name="next"  value="next ->" id="next" onclick="init()" style="width:9%;height:30px;background-color:lightskyblue;border-radius: 10px;align-items: right;">              
 </div>
 

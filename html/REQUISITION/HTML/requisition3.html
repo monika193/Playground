@@ -18,6 +18,15 @@
 </head>
 
 <body>
+        <script>
+                        
+                var additem = document.getElementById('draft');
+                additem.addEventListener('click', display);
+               function myfunction() {
+                window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/ack2.html");
+            
+                }
+             </script> 
 
         <div class="header1">
                 <div class="header1">
@@ -55,7 +64,7 @@
       </div> 
     </div>
       <div class="save">
-            <u><span>SAVE DRAFT</span></u>
+            <u><span id="draft"  onclick="myfunction()">SAVE DRAFT</span></u>
         <div id="next"> <u style="color: #32BDD2;">BACK</u> <input type="button" name="next" value="NEXT ->"  style="width:90px;height:40px;background-color:#32BDD2;border:none;border-radius: 10px;align-items: right;"> </div>          
           </div> 
  
