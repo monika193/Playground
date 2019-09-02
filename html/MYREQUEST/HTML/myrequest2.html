@@ -10,7 +10,7 @@
             var notification = document.getElementById('bell');
             notification.addEventListener('click', display);
            function init() {
-            location.href = ("file:///E:/git_local/Playground/html/MYREQUEST/HTML/requestview1.html");
+            location.href = ("requestview1.html");
        
             }
          </script>
@@ -41,8 +41,17 @@
                 </div>
                 <div class="search"><input type="text" placeholder="search" /><img src="../IMAGES/request-icons-03 (2).png" width="50px" height="50px">
                 </div>
-                <div class="button"><button>New Request</button></div>
+                <div class="button"><button id="button"onclick="display()" >New Request</button></div>
              </div>
+             <script>
+    
+                var notification = document.getElementById('button');
+                notification.addEventListener('click', display);
+               function display() {
+                location.href = ("requisition.html");
+           
+                }
+             </script>
               
              <div class="filter">
                  <div class="dropdown">
@@ -60,10 +69,10 @@
                 </div>
             
              
-            <div class="requestlist">
+            <div class="requestlist" id="bell"onclick="init()" >
                     <div> <span style="font-size: 14px; font-family: robot; font-weight: 500; color:#505050;">PUR - 2019 - 056</span><br /><br><span style="font-family:robot;font-weight:400; font-size:12px;color:#505050;">Submitted on</span><br />
                         <span style="font-size:14px;font-family:robot;font-weight:500;color:#505050;">06 Jul 2019</span></div>
-                    <div id="bell"> <img id="bell"onclick="init()" src="../IMAGES/request-icons-14 (2).png" height="60px" width="60px"/></div>
+                    <div id="bell"> <img src="../IMAGES/request-icons-14 (2).png" height="60px" width="60px"/></div>
                     <div class="notification"><span style="font-size: 14px;color:#5A5A5A;font-family:robot; font-weight:400;">AWITING APPROVEL</span><img src="../IMAGES/download (1).png" height="20" width="20" alt="green-notficatoin"/></div>
                  
                 </div>

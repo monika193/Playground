@@ -10,7 +10,7 @@
             var notification = document.getElementById('nx');
             notification.addEventListener('click', display);
            function init() {
-            location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition3.html");
+            location.href = ("requisition3.html");
        
             }
          </script>
@@ -22,7 +22,7 @@
                 var additem = document.getElementById('draft');
                 additem.addEventListener('click', display);
                function moveTo() {
-                window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/ack2.html");
+                window.location.href = ("draft1.html");
             
                 }
              </script>
@@ -59,8 +59,18 @@
     <div class="item2">
         <div>
 <div><p>IBM ThinkServer TS150 Tower Server With <br>Max. Processor 1 x Intel Xeon E3 (Quad<br> Core) E3-1225 v5”(3.3 GHz /Cache 8<br> MB)/ STD MEMORY 8GB X 1/ MAX. MEMORY<br> 64GB 4 Slots/HARD DRIVE 1 X 1TB SATA<br> 3.5” 7.2k SATA / STD. HDD BAY/ 3 bay <br>MAX. HDD BAY upto 4 x 3.5” +1 x 2.5” bay/<br> OPTICAL Multi Burner/Integrated RAID<br> 0,1,5,10 (RAID 121i).</p> </div> <br>
-    <div> <Span>READ MORE</Span></div>
+    <div> <Span id="readless"onclick="display()">READ LESS</Span></div>
 </div>
+<script>
+    
+    var notification = document.getElementById('readless');
+    notification.addEventListener('click', display);
+   function display() {
+    location.href = ("requisition2.html");
+
+    }
+ </script>
+
 <div>01</div>
 <div>10 jul 2019</div>
 <div>Rs 45,000</div>
@@ -133,7 +143,7 @@
     var additem = document.getElementById('bk');
     additem.addEventListener('click', display);
    function myfunction() {
-    window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition.html");
+    window.location.href = ("requisition.html");
 
     }
  </script>
@@ -147,7 +157,7 @@
          var additem = document.getElementById('add item');
          additem.addEventListener('click', display);
         function display() {
-         window.location.href = ('file:///E:/git_local/Playground/html/REQUISITION/HTML/additem.html');
+         window.location.href = ('additem.html');
     
          }
       </script>

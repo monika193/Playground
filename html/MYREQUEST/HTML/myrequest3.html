@@ -10,7 +10,7 @@
             var notification = document.getElementById('bell');
             notification.addEventListener('click', display);
            function init() {
-            location.href = ("file:///E:/git_local/Playground/html/MYREQUEST/HTML/requestview.html");
+            location.href = ("requestview1.html");
        
             }
          </script>
@@ -41,23 +41,35 @@
                 </div>
                 <div class="search"><input type="text" placeholder="search" /><img src="../IMAGES/request-icons-03 (2).png" width="50px" height="50px">
                 </div>
-                <div class="button"><button>New Request</button></div>
+                <div class="button"><button  id="button"onclick="display()">New Request</button></div>
              </div>
+             <script>
+    
+                    var notification = document.getElementById('button');
+                    notification.addEventListener('click', display);
+                   function display() {
+                    location.href = ("requisition.html");
+               
+                    }
+                 </script>
               
              <div class="filter">
-                 <img id="filter2"src="../IMAGES/request-icons-01 (2).png" height="50px" width="50px" onclick="myFunction()"/>
-                    <p><span>FILTER</span><br /><span style="color: #909090;font-size:12px;">Showing approved requests</span></p>
+                    <div class="dropdown">
+                 <img class="dropbtn"style=" background-color:#ffffff"src="../IMAGES/request-icons-01 (2).png" height="50px" width="50px" onclick="myFunction()"/>
+                   
                  <div id="myDropdown" class="dropdown-content">
                             <a href="myrequest2.html" >CLEAR</a>
                             <a href= "#approved"style="color: #B5B5B5">APPROVED</a>
                             <a href="#contact">DRAFT</a>
                             <a href="#contact">AWAITING</a>
                             <a href="#contact">REJECTED</a>
-                          </div> 
-                </div>
-            
+                          </div>
+                        </div>
+                          <p><span>FILTER</span><br /><span style="color: #909090;font-size:12px;">Showing approved requests</span></p>
+               
+             </div>
              
-            <div class="requestlist">
+            <div class="requestlist"id="bell"onclick="init()">
                     <div> <span style="font-size: 14px; font-family: robot; font-weight: 500; color:#505050;">PUR - 2019 - 056</span><br /><br><span style="font-family:robot;font-weight:400; font-size:12px;color:#505050;">Submitted on</span><br />
                         <span style="font-size:14px;font-family:robot;font-weight:500;color:#505050;">06 Jul 2019</span></div>
                     <div id="bell"> <img id="bell"onclick="init()" src="../IMAGES/request-icons-14 (2).png" height="60px" width="60px"/></div>
@@ -86,29 +98,30 @@
 
         </div>
     </div>
-    <script>
-        var click = document.getElementById('dropdown-content');
-         click.addEventListener('click', myFunction);
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-         Window.addEventListener('click',outsideclick)
-         function outsideclick(e){
-             if (e.target !==filter){
-                dropdown.style.display="none";
-            }
-         }
-        // if(click.toggle.display==="none"){
-        //     click.toggle.display="block";
-        //  }else{
-        //     click.toggle.display="none"
-        //  }
-     }
+
     
-    // //   window.onclick = function(event) {
-  
-
-    </script>
-
+    <script>
+        
+            function myFunction() {
+                
+                
+             document.getElementById("myDropdown").classList.toggle("show");
+            }
+            window.onclick = function (event){
+                if (!event.target.matches('.dropbtn')){
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i=0; i< dropdowns.length; i++){
+                    var openDropdown = dropdowns[i];
+                    if(openDropdown.classList.contains('show')){
+                        openDropdown.classList.remove('show');
+                    }
+                }
+                }
+            }
+            
+        
+            </script>
 </body>
 
 </html>

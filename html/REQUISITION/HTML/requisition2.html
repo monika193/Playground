@@ -10,7 +10,7 @@
             var notification = document.getElementById('nx');
             notification.addEventListener('click', display);
            function init() {
-            location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition3.html");
+            location.href = ("requisition3.html");
         
             }
          </script>
@@ -23,7 +23,7 @@
                 var additem = document.getElementById('draft');
                 additem.addEventListener('click', display);
                function myfunction() {
-                window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/ack2.html");
+                window.location.href = ("draft1.html");
             
                 }
              </script> 
@@ -67,7 +67,7 @@
         var notification = document.getElementById('readmore');
         notification.addEventListener('click', display);
        function display() {
-        location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition8.html");
+        location.href = ("requisition8.html");
     
         }
      </script>
@@ -78,13 +78,13 @@
 <div>01</div>
 <div>10 jul 2019</div>
 <div>Rs 45,000</div>
-<div><img id="dropdown" src="../IMAGES/request-icons-11 (2).png" height="30px" onclick="myFunction()"/></div>
+<div class="dropdown"><img  src="../IMAGES/request-icons-11 (2).png" height="30px" id="dropbtn" onclick="myFunction()"/></div>
 <div id="myDropdown" class="dropdown-content">
     <a href="#home">EDIT</a>
     <a href="#home">DELETE</a>
     </div>
     
-</div>
+ </div> 
 
 
 <div class="item2">
@@ -152,7 +152,7 @@
         var additem = document.getElementById('bk');
         additem.addEventListener('click', display);
        function display() {
-        window.location.href = ("file:///E:/git_local/Playground/html/REQUISITION/HTML/requisition.html");
+        window.location.href = ("requisition.html");
     
     
         }
@@ -177,17 +177,15 @@
          var additem = document.getElementById('add item');
          additem.addEventListener('click', display);
         function display() {
-         window.location.href = ('file:///E:/git_local/Playground/html/REQUISITION/HTML/additem.html');
+         window.location.href = ('additem.html');
     
          }
       </script>
-      <script>
+      <!-- <script>
         var click = document.getElementById('dropdown-content');
          click.addEventListener('click', myFunction);
-        //  var Dropdown= document.getElementById('myDropdown')
-    function myFunction() {
-        // Dropdown.style.display('block');
-        // document.style.display()
+
+    function myFunction() 
         
      document.getElementById("myDropdown").classList.toggle("show");
       Window.addEventListener('click',outsideclick)
@@ -196,15 +194,58 @@
                 dropdown.style.display="none";
             }
          }
-    }
-    </script>
+        
+    </script>  -->
+    <script>
+        
+        function myFunction() {
+            
+            
+         document.getElementById("myDropdown").classList.toggle("show");
+        }
+        window.onclick = function (event){
+            if (!event.target.matches('.dropbtn')){
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i=0; i< dropdowns.length; i++){
+                var openDropdown = dropdowns[i];
+                if(openDropdown.classList.contains('show')){
+                    openDropdown.classList.remove('show');
+                }
+            }
+            }
+        }
+        
+    
+        </script>
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     
     
        
 
-</body>
-</html>
+
 
 
 
