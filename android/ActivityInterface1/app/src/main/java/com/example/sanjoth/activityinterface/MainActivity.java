@@ -10,8 +10,6 @@ public class MainActivity extends AppCompatActivity implements DemoInterface {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        DemoInterfaceClass b =new DemoInterfaceClass ();
-        b.interfacemethod();
         DemoInterfacemethod();
 
     }
