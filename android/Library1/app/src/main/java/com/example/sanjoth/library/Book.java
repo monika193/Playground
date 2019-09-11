@@ -4,13 +4,11 @@ public class Book {
     String title;
     String author;
     String price;
-    String BookList;
 
-    Book(String title, String author, String price,String BookList){
+    Book(String title, String author, String price){
      this.title = title;
      this.author = author;
      this.price= price;
-     this.BookList=BookList;
 
     }
 }
