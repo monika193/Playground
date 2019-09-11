@@ -4,11 +4,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -17,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
     Button display;
     Button delete;
     TextView textView;
-    EditText editText;
-    EditText editText2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +23,6 @@ public class MainActivity extends AppCompatActivity {
         display = findViewById(R.id.button2);
         delete = findViewById(R.id.button3);
         textView=findViewById(R.id.textView);
-        editText=findViewById(R.id.editText1);
-        editText2=findViewById(R.id.editText2);
-
         final ArrayList<String> Slist = new ArrayList<>();
 
 
@@ -41,12 +33,10 @@ public class MainActivity extends AppCompatActivity {
 
                 @Override
                 public void onClick(View view) {
-                 String Value=editText.getText().toString();
 
-                    Slist.add(Value);
-//                    Slist.add("Arraylist");
-//                    Slist.add("Array");
-
+                        Slist.add("Android");
+                        Slist.add("Arraylist");
+                        Slist.add("Array");
 
 
 //                    Toast.makeText(MainActivity.this, "Plz Enter all the data", Toast.LENGTH_LONG).show();
@@ -60,9 +50,8 @@ public class MainActivity extends AppCompatActivity {
         display.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                textView.setText(null);
                 for (int i=0; i<Slist.size();i++) {
-                    textView.append(Slist.get(i)+"\n");
+                    textView.append(Slist.get(i));
 
                 }
 
@@ -71,8 +60,7 @@ public class MainActivity extends AppCompatActivity {
         delete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String Value=editText2.getText().toString();
-                Slist.remove(Value);
+                Slist.remove("Android");
 
             }
         });
