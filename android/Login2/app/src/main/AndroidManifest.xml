@@ -24,6 +24,11 @@
         <activity
             android:name=".recycleview"
             android:label="@string/title_activity_recycleview"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".jsonfile" />
+        <activity
+            android:name=".Requisition1"
+            android:label="@string/title_activity_requisition1"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.json.JSONObject;
+
 class MyRecyclerListAdapter extends RecyclerView.Adapter<MyRecyclerListAdapter.MyViewHolder> {
     String titles[],dates[],status[];
     private Context context;
@@ -60,6 +62,9 @@ class MyRecyclerListAdapter extends RecyclerView.Adapter<MyRecyclerListAdapter.M
             date.setText(dates);
             statusText.setText(status);
            imageView.setImageResource(R.drawable.bell);
+        }
+
+        public void setUpData(JSONObject jsonObject) {
         }
     }
 }

@@ -65,7 +65,7 @@ public class MyRequest extends AppCompatActivity implements NavigationView.OnNav
         button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),recycleview.class);
+                Intent intent=new Intent(getApplicationContext(),Requisition1.class);
                 startActivity(intent);
             }
         });

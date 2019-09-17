@@ -85,7 +85,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView" />
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/editText3"
                 android:layout_width="match_parent"
                 android:layout_height="41dp"
                 android:layout_marginStart="8dp"
@@ -175,7 +175,7 @@
                 android:layout_marginTop="1dp"
                 android:visibility="gone"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editText2"
+                app:layout_constraintTop_toBottomOf="@+id/editText3"
                 app:srcCompat="@drawable/warning" />
 
             <TextView
@@ -193,7 +193,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/guideline2"
                 app:layout_constraintHorizontal_bias="0.188"
                 app:layout_constraintStart_toEndOf="@+id/imageView4"
-                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+                app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
         </android.support.constraint.ConstraintLayout>
     </android.support.constraint.ConstraintLayout>
