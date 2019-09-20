@@ -1,9 +1,12 @@
 package com.example.sanjoth.login;
 
+import android.app.VoiceInteractor;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,6 +17,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View.OnClickListener;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -22,15 +26,21 @@ import android.widget.ListPopupWindow;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.example.sanjoth.login.Global.RequestStatus;
+import com.example.sanjoth.login.Model.RequestModel;
+
+import java.util.ArrayList;
+
 import static com.example.sanjoth.login.R.layout.popupmenu;
 
 public class MyRequest extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
          ListPopupWindow listPopupWindow;
-//         ListView listView;
+         ListView listView;
            ImageView filter;
-           ListView listView;
+//           ListView listView;
            Button button;
            ImageView imageview;
+//           ImageView imageView1;
 
 
     @Override
@@ -38,6 +48,7 @@ public class MyRequest extends AppCompatActivity implements NavigationView.OnNav
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_request);
         button=findViewById(R.id.button3);
+//        imageview=findViewById(R.id.image);
 
 
 
@@ -45,15 +56,111 @@ public class MyRequest extends AppCompatActivity implements NavigationView.OnNav
         ImageView filter=(ImageView)findViewById(R.id.imageView7);
         listPopupWindow=new  android.widget.ListPopupWindow(getApplicationContext());
         final TextView listpopup=(TextView)findViewById(R.id.popuptext);
-//        listView=findViewById(R.id.listview);
-        String[] items_list={"CLEAR","APPROVED","AWAITING","DRAFT","REJECTED"};
-        String[] items={"CLEAR","APPROVED","AWAITING","DRAFT","REJECTED"};
+        final ListView listView=(ListView)findViewById(R.id.listview);
+
+
+//
+//       ArrayList<String> Slist = new ArrayList<>(5);
+//        ArrayList<String> Slist1 = new ArrayList<>(5);
+//        ArrayList<String> Slist2 = new ArrayList<>(5);
+        final ArrayList<RequestModel> requestList=new ArrayList<>();
+
+//        ArrayList<RecyclerView> recyclerViews=new ArrayList<>();
+//        final ArrayList<String> requisition = new ArrayList<>();
+
+
+        RequestModel requestModel= new RequestModel();
+
+        requestModel.setRequestNumber("PUR-2019-056");
+        requestModel.setRequestStatus(RequestStatus.Approved);
+        requestModel.setDescription("07-jul-2019");
+        requestList.add(requestModel);
+
+        requestModel = new RequestModel();
+
+        requestModel.setRequestNumber("PUR-2019-057");
+        requestModel.setRequestStatus(RequestStatus.Draft);
+        requestModel.setDescription("08-jul-2019");
+        requestList.add(requestModel);
+
+        requestModel = new RequestModel();
+
+        requestModel.setRequestNumber("PUR-2019-058");
+        requestModel.setRequestStatus(RequestStatus.Rejected);
+        requestModel.setDescription("09-jul-2019");
+        requestList.add(requestModel);
+
+        requestModel = new RequestModel();
+
+        requestModel.setRequestNumber("PUR-2019-059");
+        requestModel.setRequestStatus(RequestStatus.Awaiting);
+        requestModel.setDescription("10-jul-2019");
+        requestList.add(requestModel);
+
+
+
+
+
+
+//        Slist.add("PUR-2019-056");
+//        Slist1.add("06-jul-2019");
+//        Slist2.add("Approved");
+//
+//
+//        Slist.add("PUR-2019-056");
+//        Slist1.add("06-jul-2019");
+//        Slist2.add("Approved");
+//
+//
+//        Slist.add("PUR-2019-056");
+//        Slist1.add("06-jul-2019");
+//        Slist2.add("Approved");
+//
+
+        MyListAdapter listAdapter=new MyListAdapter(getApplicationContext(),requestList);
+        listView.setAdapter(listAdapter);
+//        String[] items_list={"CLEAR","APPROVED","AWAITING","DRAFT","REJECTED"};
+//        String[] items={"CLEAR","APPROVED","AWAITING","DRAFT","REJECTED"};
 
 
 //        ListAdapter adapter=new ArrayAdapter<>(getApplicationContext(),popupmenu,items_list);
 //        listView.setAdapter(adapter);
-        listPopupWindow.setAdapter(new ArrayAdapter<>(getApplicationContext(),R.layout.popupmenu,items_list));
+//        int items_list = 0;
+
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+
+            @Override
+
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long id) {
+
+                RequestModel request =  requestList.get(i);
+//                Intent intent=new Intent(MyRequest.this,Requisition1.class);
+//               startActivity(intent);
+//                String value = "Hello World!";
+
+               Intent intent = new Intent(getApplicationContext(), DemoClass.class);
+               Bundle requestDataBundel =new Bundle();
+               requestDataBundel.putString("RequestNumber",request.getRequestNumber());
+               requestDataBundel.putString("RequestDescription",request.getDescription());
+               requestDataBundel.putString("RequestStatus",request.getRequestStatus().toString());
+//               intent.putExtra("sample_name", value);
+//                startActivity(intent);
+//                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.putExtra("request",requestDataBundel);
+                startActivity(intent);
+
+
+
+
+            }
+        });
+//
+
+            listPopupWindow.setAdapter(new ArrayAdapter<>(getApplicationContext(),R.layout.popupmenu));
         listPopupWindow.setAnchorView(filter);
+
         listPopupWindow.setModal(true);
         filter.setOnClickListener(new OnClickListener() {
             @Override
@@ -62,23 +169,27 @@ public class MyRequest extends AppCompatActivity implements NavigationView.OnNav
 
                                             }
                                         });
-        button.setOnClickListener(new OnClickListener() {
+       button.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(),Requisition1.class);
-                startActivity(intent);
+              Intent intent=new Intent(getApplicationContext(),Requisition1.class);
+               startActivity(intent);
+
+
             }
         });
 
 
 
-        listView=findViewById(R.id.listview);
-        String title[]={"PUR - 2019 - 056","PUR - 2019 - 056","PUR - 2019 - 056","PUR - 2019 - 056","PUR - 2019 - 056"};
-        String date[]={"22-Aug-2019","24-Aug-2019","28-Aug-2019","30-Aug-2019","2-Sep-2019"};
-        String status[]={"APPROVED","REJECTED","DRAFT","AWAITING","COMPLETED"};
+
+
+//        listView=findViewById(R.id.listview);
+//        String title[]={"PUR - 2019 - 056","PUR - 2019 - 056","PUR - 2019 - 056","PUR - 2019 - 056","PUR - 2019 - 056"};
+//        String date[]={"22-Aug-2019","24-Aug-2019","28-Aug-2019","30-Aug-2019","2-Sep-2019"};
+//        String status[]={"APPROVED","REJECTED","DRAFT","AWAITING","COMPLETED"};
 // String statusColors
-        ListAdapter listAdapter=new MyListAdapter(getApplicationContext(),title,date,status);
-        listView.setAdapter(listAdapter);
+//        ListAdapter listAdapter=new MyListAdapter(getApplicationContext(),title,date,status);
+//        listView.setAdapter(listAdapter);
 
 
 

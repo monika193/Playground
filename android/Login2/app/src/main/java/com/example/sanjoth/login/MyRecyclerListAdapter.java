@@ -51,9 +51,9 @@ class MyRecyclerListAdapter extends RecyclerView.Adapter<MyRecyclerListAdapter.M
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            title=itemView.findViewById(R.id.title);
-            date=itemView.findViewById(R.id.date);
-            statusText=itemView.findViewById(R.id.status);
+            title=itemView.findViewById(R.id.textview1);
+            date=itemView.findViewById(R.id.textView3);
+            statusText=itemView.findViewById(R.id.textView4);
            imageView=itemView.findViewById(R.id.image);
         }
 

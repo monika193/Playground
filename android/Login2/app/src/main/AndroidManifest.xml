@@ -29,7 +29,12 @@
         <activity
             android:name=".Requisition1"
             android:label="@string/title_activity_requisition1"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DemoClass"
+            android:label="@string/title_activity_demo_class"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RequestView33"></activity>
     </application>
 
 </manifest>
