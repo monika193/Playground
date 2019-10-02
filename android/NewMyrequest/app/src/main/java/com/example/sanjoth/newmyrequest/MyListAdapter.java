@@ -13,11 +13,10 @@ import com.example.sanjoth.newmyrequest.Model.RequestModel;
 import java.util.ArrayList;
 
 class MyListAdapter extends BaseAdapter {
-    TextView title;
-    public Context context;
 
+    public Context context;
     ArrayList<RequestModel> request;
-    public MyListAdapter(Context applicationContext, ArrayList<RequestModel> requestList) {
+    public MyListAdapter(Context context, ArrayList<RequestModel> requestList) {
         this.context=context;
         this.request=requestList;
     }
@@ -38,17 +37,23 @@ class MyListAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int i, View convertView, ViewGroup parent) {
+    public View getView(int i, View convertView, ViewGroup viewGroup) {
+        View view1 =LayoutInflater.from(context).inflate(R.layout.listview,viewGroup,false);
+
+        TextView title,name,date;
         ImageView notificationimage;
 
-        View view1 =LayoutInflater.from(context).inflate(R.layout.listview,null);
         RequestModel requestModel= this.request.get(i);
-        TextView title=(TextView) view1.findViewById(R.id.textview1);
+
+        title= view1.findViewById(R.id.textview1);
         title.setText(String.valueOf(requestModel.getRequestNumber()));
-        TextView name=(TextView) view1.findViewById(R.id.textView3);
+
+        name=view1.findViewById(R.id.textView3);
         name.setText(String.valueOf(requestModel.getRequestStatus()));
-        TextView date=(TextView)view1.findViewById(R.id.textView4);
+
+        date=view1.findViewById(R.id.textView4);
         date.setText(String.valueOf(requestModel.getDescription()));
+
         notificationimage=view1.findViewById(R.id.notification);
         notificationimage.setImageResource(R.drawable.bell);
 

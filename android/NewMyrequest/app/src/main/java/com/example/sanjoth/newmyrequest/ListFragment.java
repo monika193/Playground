@@ -22,10 +22,7 @@ import java.util.ArrayList;
 
 public class ListFragment extends Fragment {
     ListView listView;
-    ImageView filter;
-    Button button;
-    ImageView imageview;
-    private DelegateForm delegateForm;
+    DelegateForm delegateForm;
     private View view;
 
 
@@ -35,10 +32,7 @@ public class ListFragment extends Fragment {
         // Inflate the layout for this fragment
         view= inflater.inflate(R.layout.fragment_list, container, false);
 
-        button =view. findViewById(R.id.button3);
-
-
-        final ListView listView=(ListView) view.findViewById(R.id.listview);
+        listView=view.findViewById(R.id.listview);
 
 
 //
@@ -80,17 +74,17 @@ public class ListFragment extends Fragment {
         requestList.add(requestModel);
 
 
-        MyListAdapter listAdapter=new MyListAdapter(view.getContext(),requestList);
-        listView.setAdapter((ListAdapter) listAdapter);
+       ListAdapter   MyListAdapter =new MyListAdapter(view.getContext(),requestList);
+        listView.setAdapter(MyListAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
 
             @Override
 
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long id) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
 
-                RequestModel request =  requestList.get(i);
+                RequestModel request =  requestList.get(position);
                 if (delegateForm !=null){
                     delegateForm.onclickRequestItem(request);
                 }
