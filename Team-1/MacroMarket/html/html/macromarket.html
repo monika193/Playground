@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../css/macromarket.css">
+<title> Macromarket</title>
+</head>
+<body>
+
+    <div class="main">
+        <button type="button" style="width:200px; height:40px;color:white;border-radius: 25px;">POINT YOUR SPOT</button>
+       <div class="search" style="float:left;">
+           <div class="imagesearch">
+               <img src="../images/request-icons-03.png" alt="imagesearch" style="height:33px;width:33px;padding-top: 5px;">
+              <input type="text" style="border: none;" id="myInput" placeholder="Search for names.." title="Type in a name">
+               
+           </div>
+           <div class="imagescancel">
+               <img src="../images/cancel.png"  alt="imagescancel" style="height:33px;width:33px;padding-top: 5px;">
+            </div>
+         
+       </div>
+       
+        <div class="filter">
+            <div class="dropdown">
+            <img class="dropbtn" style=" background-color:#ffffff"src="../images/request-icons-01 (2).png" height="70px" width="70px" onclick="myFunction()"/> 
+            <div id="myDropdown" class="dropdown-content">
+                    <a href="#home" style="color: #B5B5B5">RESTAURANTS</a>
+                    <a href= "myrequest3.html">PARK</a>
+                    <a href="#contact">MOVIE THEATER</a>
+                    <a href="#contact">AMUSEMENT PARK</a>
+                    <a href="#contact">CHATS</a>
+                    <a href="#contact">GROCERY STORES</a>
+        
+         
+         <div style="clear:both"></div>
+        </div>
+        </div>
+        </div>
+        
+         <div class="shopcontainer">
+            <img src="../images/hotel.jpg"  alt="sigdirestaurant" style="height:70px;width:90px; padding-left: 5px;">
+            <div class="shopdetails">
+            <span><b>The Sigdi Restaurant</b></span>
+            <span>2050. m(Desai-Cross)</span>
+            <span>North Indian(pure veg)</span>    
+        </div>
+       
+
+         </div>
+         <div class="shopcontainer" id="myUL">
+                <img src="../images/PARK.jpg"  alt="M.G.Park" style="height:70px;width:90px; padding-left: 5px;">
+                <div class="shopdetails">
+                <span><b>M.G.Park</b></span>
+                <span>199. m(Keshwapur)</span>
+                <span>Amusement</span>    
+            </div>
+            
+    
+             </div>
+             <div class="shopcontainer" id="myUL">
+                    <img src="../images/PVR.jpg"  alt="PVR Cinema" style="height:70px;width:90px; padding-left: 5px;">
+                    <div class="shopdetails">
+                    <span><b>PVR Cinema</b></span>
+                    <span>100. m(Gokul-Road)</span>
+                    <span>Movie theatre</span>    
+                </div>
+               
+        
+                 </div>
+                 <div class="shopcontainer" id="myUL">
+                        <img src="../images/flipfresh.jpg"  alt="flipfresh.in" style="height:70px;width:90px; padding-left: 5px;">
+                        <div class="shopdetails">
+                        <span><b>Flip Fresh.in</b></span>
+                        <span>700. m(Sai-Nagar)</span>
+                        <span>Grocery shop</span>    
+                    </div>
+                    
+            
+                     </div>
+                     <div class="shopcontainer" id="myUL">
+                            <img src="../images/salon.jpg"  alt="loreal" style="height:70px;width:90px; padding-left: 5px;">
+                            <div class="shopdetails">
+                            <span><b>Loreal Unisex Saloon</b></span>
+                            <span>100. m(Vidyanagar)</span>
+                            <span>UnisexSaloon</span>    
+                        </div>
+                        
+                
+                         </div>
+                         <div class="shopcontainer" id="myUL">
+                                <img src="../images/food.jpg"  alt="streat" style="height:70px;width:90px; padding-left: 5px;">
+                                <div class="shopdetails">
+                                <span><b>Streat</b></span>
+                                <span>500. m(Shirurpark)</span>
+                                <span>Foodcourt</span>    
+                            </div>
+                            
+                    
+                             </div>
+                             <div class="shopcontainer" id="myUL">
+                                    <img src="../images/bakery.jpg"  alt="bakery" style="height:70px;width:90px; padding-left: 5px;">
+                                    <div class="shopdetails">
+                                    <span><b>Humble Pie</b></span>
+                                    <span>900. m(Vidyanagar)</span>
+                                    <span>CakeShop</span>    
+                                </div>
+                        
+                        
+                                 </div>
+    </div>
+<!-- </div> -->
+<script>
+        
+    function myFunction() {
+        
+        
+     document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function (event){
+        if (!event.target.matches('.dropbtn')){
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i=0; i< dropdowns.length; i++){
+            var openDropdown = dropdowns[i];
+            if(openDropdown.classList.contains('show')){
+                openDropdown.classList.remove('show');
+            }
+        }
+        }
+    }
+    
+
+    </script>
+
+
+</body>
+</html>

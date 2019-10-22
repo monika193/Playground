@@ -1,0 +1,120 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box; 
+}
+
+body{
+  background-color:#F6F8F9;
+}
+
+
+.main
+{
+    background-color: white;
+    border: 1px solid #747474;
+    width: 100%;
+    height: 97%;
+   
+}
+button
+{
+margin-left: 600px;
+margin-top: 5px;
+font-size: 14px;
+background-color: #32BDD2;
+}
+.search
+{
+
+border: 1px solid black;
+height:40px;
+width:35%;
+border-radius: 25px;
+margin-left: 500px;
+margin-top:5px;
+display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+}
+.imagesearch
+{
+    width: 55%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.shopcontainer
+{   
+    margin-top: 5px;
+    border: 1px solid black;
+    height:80px;    
+    width:35%;
+    margin-left: 500px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.shopdetails
+{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding-right:50%;
+}
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: -15px;
+
+  }
+  
+   .dropbtn:hover, .dropbtn:focus {
+    background-color: #ffffff;
+  } 
+  
+   
+
+   
+   .dropdown-content {
+    display: none;
+    position: absolute;
+     margin-top: -20px; 
+    background-color: #FFFFFF;
+    min-width: 160px;
+    min-height: 274px;
+    overflow: auto; 
+    box-shadow: 0px 3px 10px  #E0E0E0;
+    z-index: 1;
+    border: 0.5px solid #E0E0E0;
+    z-index: 1;  
+    margin-left: 990px;
+    
+    
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    color:#5A5A5A;
+    font-family: roboto;
+    font-weight: 400;
+  
+
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  .show {
+    display: block;
+
+  }
