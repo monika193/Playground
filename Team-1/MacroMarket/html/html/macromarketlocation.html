@@ -18,20 +18,20 @@
        
         <button type="button" style="width:200px; height:40px;color:white;border-radius: 25px;">POINT YOUR SPOT</button>
        <div class="search" style="float:left;">
-            <div class="imagesearch">
+            <div class="imagesearch" style="margin-right: 20px;">
                     <img src="../IMAGES/request-icons-03.png" alt="imagesearch" style="height:20px;width:20px;padding-top: 2px;">
-                   <input type="text" style="border: none;" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
-                    
+                   <!-- <input type="text" style="border: none;" id="myInput" accept="image/gif, image/jpeg" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"> -->
+                   <input type="search" id="myInput" onkeyup="myFunction()" style="border: none;" placeholder="Search for something..">    
                 </div>
         
-           <div class="imagecancel">
+           <!-- <div class="imagecancel">
                <img src="../IMAGES/cancel.png"  alt="imagecancel" style="height:33px;width:33px;padding-top: 5px;">
             </div>
-         
+          -->
        </div>
        <div class="filter">
             <div class="dropdown">
-            <img class="dropbtn" style=" background-color:#ffffff"src="../IMAGES/request-icons-01 (2).png" height="70px" width="70px" onclick="myFunction()"/> 
+            <img class="dropbtn" style=" background-color:#ffffff"src="../IMAGES/request-icons-01 (2).png" height="70px" width="70px" onclick="init()"/> 
             <div id="myDropdown" class="dropdown-content">
                     <a href="#home" style="color: #B5B5B5">RESTAURANTS</a>
                     <a href= "myrequest3.html">PARK</a>
@@ -45,51 +45,58 @@
         </div>
         </div>
         </div>
-         
+        <ul id="myUL">
+               
          <div class="shopcontainer">
             <img src="../IMAGES/hotel.jpg"  alt="sigdirestaurant" style="height:70px;width:70px; padding-left: 5px;">
             <div class="shopdetails">
-            <span><b>The Sigdi Restaurant</b></span>
+                    <li><a href="#"><span><b>The Sigdi Restaurant</b></span>
             <span>205. m(Desai-Cross)</span>
-            <span>North Indian(pure veg)</span>    
-        </div>
+            <span>North Indian(pure veg)</span></a></li>
+           
+         </div>
         
 
          </div>
+        
          <div class="shopcontainer">
-                <img src="../IMAGES/PARK.jpg"  alt="M.G.Park" style="height:70px;width:70px; padding-left: 5px;">
-                <div class="shopdetails">
-                <span><b>M.G.Park</b></span>
-                <span>199. m(Keshwapur)</span>
-                <span>Amusement Park</span>    
-            </div>
+                      <img src="../IMAGES/PARK.jpg"  alt="M.G.Park" style="height:70px;width:70px; padding-left: 5px;">
+                      <div class="shopdetails">
+                      <li><a href="#"><span><b>M.G.Park</b></span><br>
+                      <span>199. m(Keshwapur)</span>
+                      <span>Amusement Park</span></a></li> 
+                         
+                 </div>
             
-             </div>
-             <div class="shopcontainer">
+                 </div>
+            
+                    <div class="shopcontainer">
                     <img src="../IMAGES/PVR.jpg"  alt="PVR" style="height:70px;width:70px; padding-left: 5px;">
+                   
                     <div class="shopdetails">
-                    <span><b>PVR Cinema</b></span>
+                    <li><a href="#"><span><b>PVR Cinema</b></span><br>
                     <span>100. m(Gokul-Road)</span>
-                    <span>Movie theatre </span>    
+                    <span>Movie theatre </span></a>      
                 </div>
+                </li>
                 
         
                  </div>
                  <div class="shopcontainer">
                         <img src="../IMAGES/flipfresh.jpg"  alt="flipfresh.in" style="height:70px;width:70px; padding-left: 5px;">
                         <div class="shopdetails">
-                        <span><b>Flip Freah.in</b></span>
+                        <li><a href="#"><span><b>Flip Fresh.in</b></span>
                         <span>700. m(Sai-Nagar)</span>
-                        <span>Grocery shop</span>    
+                        <span>Grocery shop</span></a></li>     
                     </div>
                     
                      </div>
                      <div class="shopcontainer">
                             <img src="../IMAGES/salon.jpg"  alt="loreal" style="height:70px;width:70px; padding-left: 5px;">
                             <div class="shopdetails">
-                            <span><b>Loreal Unisex Saloon</b></span>
+                            <li><a href="#"><span><b>Loreal Unisex Saloon</b></span> 
                             <span>100. m(Vidyanagar)</span>
-                            <span>UnisexSaloon</span>    
+                            <span>UnisexSaloon</span></a></li>    
                         </div>
                         
                 
@@ -97,9 +104,9 @@
                          <div class="shopcontainer">
                                 <img src="../IMAGES/food.jpg"  alt="streat" style="height:70px;width:70px; padding-left: 5px;">
                                 <div class="shopdetails">
-                                <span><b>Streat</b></span>
+                                <li><a href="#"><span><b>Streat</b></span>
                                 <span>500. m(Shirurpark)</span>
-                                <span>Foodcourt</span>    
+                                <span>Foodcourt</span></a></li>      
                             </div>
                             
                     
@@ -107,12 +114,14 @@
                              <div class="shopcontainer">
                                     <img src="../IMAGES/bakery.jpg"  alt="bekary" style="height:70px;width:70px; padding-left: 5px;">
                                     <div class="shopdetails">
-                                    <span><b>Humble Pie</b></span>
+                                    <li><a href="#"><span><b>Humble Pie</b></span>
                                     <span>900. m(Vidyanagar)</span>
-                                    <span>CakeShop</span>    
-                                </div>
+                                    <span>CakeShop</span></a></li>  
                                 
-                                 </div>
+                                </div>
+                                </div>
+                                </ul> 
+                               
     </div>
     </div>
     <div class="location">
@@ -137,10 +146,18 @@
             
     </div>
     <div style="clear:both"></div>
+    <p id="demo"></p>
+
+<script>
+  function myFunction() {
+  var x = document.getElementById("myInput").placeholder;
+  document.getElementById("demo").innerHTML = x;
+}
+</script>
 
     <script>
         
-            function myFunction() {
+            function init() {
                 
                 
              document.getElementById("myDropdown").classList.toggle("show");
@@ -160,6 +177,31 @@
             
         
             </script>
+
+<script>
+    function myFunction() {
+
+        var input, filter, ul, li, a, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myUL");
+        li = ul.getElementsByTagName("li");
+        var img = document.getElementsByClassName("shopcontainer");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            txtValue = a.textContent || a.innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+                img[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+                img[i].style.display = "none";
+            }
+        }
+    }
+</script>
+
+
 
 </body>
 </html>

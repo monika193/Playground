@@ -26,7 +26,7 @@ body{
 
 button
 {
- margin-left: 150px; 
+ margin-left: 130px; 
 margin-top: 5px;
 font-size: 14px;
 background-color: #32BDD2;
@@ -36,9 +36,9 @@ background-color: #32BDD2;
 
 border: 1px solid black;
 height:40px;
-width:75%;
+width:70%;
 border-radius: 25px;
-margin-left: 50px;
+margin-left: 60px;
 margin-top:5px;
 display:flex;
 flex-direction: row;
@@ -52,7 +52,7 @@ justify-content: space-between;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-    margin-left: 40px;
+    margin-left: 60px;
 }
 .shopcontainer
 {   
@@ -96,16 +96,16 @@ justify-content: space-between;
    .dropdown-content {
     display: none;
     position: absolute;
-     margin-top: -20px; 
+     margin-top: -10px; 
     background-color: #FFFFFF;
-    min-width: 160px;
+    min-width: 140px;
     min-height: 274px;
     overflow: auto; 
     box-shadow: 0px 3px 10px  #E0E0E0;
     z-index: 1;
     border: 0.5px solid #E0E0E0;
     z-index: 1;  
-    margin-left: 500px;
+    margin-left: 400px;
     
     
   }
@@ -128,3 +128,38 @@ justify-content: space-between;
     display: block;
 
   }
+   /* #myInput {
+    background-image: url('/css/searchicon.png');
+    background-position: 10px 12px;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+  }
+   */
+   #myUL {
+    list-style-type:none ;
+    padding: 0;
+    margin: 0;
+  } 
+   
+  #myUL li a {
+    /* border: 1px solid #ddd; */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: #f6f6f6;
+    /* padding: 12px; */
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    display: block
+    
+  }
+  
+  #myUL li a:hover:not(.header) {
+    background-color: #eee;
+  }
+
+  
+  
